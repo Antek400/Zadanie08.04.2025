@@ -1,19 +1,22 @@
 function zaokraglij() {
-  const input = document.getElementById("liczba").value;
-  const liczba = parseFloat(input);
+
+  let liczba = parseFloat(document.getElementById('liczba').value);
 
   if (isNaN(liczba)) {
-    alert("Podaj prawidłową liczbę!");
+
+    alert("Proszę podać prawidłową liczbę!");
     return;
   }
 
-  if (Number.isInteger(liczba)) {
-    alert("Błąd: Podana liczba jest całkowita. Podaj liczbę niecałkowitą.");
-    return;
-  }
 
-  document.getElementById("box1").textContent = Math.round(liczba);
-  document.getElementById("box2").textContent = Math.floor(liczba);
-  document.getElementById("box3").textContent = Math.ceil(liczba);
-  document.getElementById("box4").textContent = Math.trunc(liczba);   
+  let zaokraglone = Math.round(liczba);
+  let zaokragloneWDol = Math.floor(liczba);
+  let zaokragloneWGore = Math.ceil(liczba);
+  let obciete = Math.trunc(liczba);
+
+
+  document.getElementById('box1').innerText = `Zaokrąglenie:\n${zaokraglone}`;
+  document.getElementById('box2').innerText = `W dół:\n${zaokragloneWDol}`;
+  document.getElementById('box3').innerText = `W górę:\n${zaokragloneWGore}`;
+  document.getElementById('box4').innerText = `Obcięte:\n${obciete}`;
 }

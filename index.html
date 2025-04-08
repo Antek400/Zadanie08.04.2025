@@ -9,28 +9,15 @@
   <div class="input-section">
     <label for="liczba">Podaj liczbę niecałkowitą</label>
     <input type="number" id="liczba" step="any" />
-    <button onclick="zaokraglij()">Zaokragl</button>
+    <button onclick="zaokraglij()">Zaokrąglij</button>
   </div>
 
-  <section class="output-section">
-    <div class="output-item">
-      <div class="label">Zaokrąglenie matematyczne</div>
-      <div class="output-box" id="box1">-o-</div>
-    </div>
-    <div class="output-item">
-      <div class="label">Zaokrąglenie w dół</div>
-      <div class="output-box" id="box2">-o-</div>
-    </div>
-    <div class="output-item">
-      <div class="label">Zaokrąglenie w górę</div>
-      <div class="output-box" id="box3">-o-</div>
-    </div>
-    <div class="output-item">
-      <div class="label">Obcina część dziesiętną</div>
-      <div class="output-box" id="box4">-o-</div>
-    </div>
-  </section>
-  
+  <div class="output-container">
+    <div class="output-box" id="box1">-o-</div>
+    <div class="output-box" id="box2">-o-</div>
+    <div class="output-box" id="box3">-o-</div>
+    <div class="output-box" id="box4">-o-</div>
+  </div>
 
   <script src="script.js"></script>
 </body>
