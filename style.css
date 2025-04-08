@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: gray;
+}
+
+.input-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.input-section label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.input-section input {
+  padding: 10px;
+  font-size: 16px;
+  background-color: lightgrey;
+}
+
+.input-section button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: lightgrey;
+}
+
+.output-section {
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+  margin-top: 250px;
+}
+
+.output-box {
+  border: 2px solid black;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+  background-color: lightgrey;
+}
+
+.output-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}

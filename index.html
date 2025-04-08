@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Zaokrąglanie Liczby</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="input-section">
+    <label for="liczba">Podaj liczbę niecałkowitą</label>
+    <input type="number" id="liczba" step="any" />
+    <button onclick="zaokraglij()">Zaokragl</button>
+  </div>
+
+  <section class="output-section">
+    <div class="output-item">
+      <div class="label">Zaokrąglenie matematyczne</div>
+      <div class="output-box" id="box1">-o-</div>
+    </div>
+    <div class="output-item">
+      <div class="label">Zaokrąglenie w dół</div>
+      <div class="output-box" id="box2">-o-</div>
+    </div>
+    <div class="output-item">
+      <div class="label">Zaokrąglenie w górę</div>
+      <div class="output-box" id="box3">-o-</div>
+    </div>
+    <div class="output-item">
+      <div class="label">Obcina część dziesiętną</div>
+      <div class="output-box" id="box4">-o-</div>
+    </div>
+  </section>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
